@@ -1,0 +1,105 @@
+/* Responsive grid for music cards */
+.music-list-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem 1.5rem;
+  justify-content: flex-start;
+}
+.music-card {
+  background: #111;
+  border-radius: 8px;
+  width: 240px;
+  margin-bottom: 1.5rem;
+  color: #fff;
+  border: 1px solid #222;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.music-cover {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+  background: #222;
+}
+.music-info {
+  padding: 0.7rem 1rem 1rem 1rem;
+}
+.music-info h4 {
+  color: #fff;
+  font-size: 1.05rem;
+  margin-bottom: 0.2rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.music-info p {
+  margin-bottom: 0.12rem;
+  color: #bdbdbd;
+  font-size: 0.98rem;
+}
+.music-info .artist {
+  color: #fd7e14;
+  font-weight: 500;
+}
+.music-actions {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+  gap: 0.5rem;
+}
+.play-btn {
+  background: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.add-playlist-btn {
+  background: #ffc107;
+  color: #222;
+  border: none;
+  border-radius: 5px;
+  padding: 0.35rem 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 0.98rem;
+}
+.genre {
+  color: #fd7e14;
+  font-size: 0.97rem;
+  margin-left: auto;
+  font-weight: 500;
+}
+/* Responsive for mobile */
+@media (max-width: 900px) {
+  .music-list-grid {
+    gap: 1rem 1rem;
+  }
+  .music-card {
+    width: 46vw;
+    min-width: 160px;
+    max-width: 98vw;
+  }
+}
+@media (max-width: 600px) {
+  .music-list-grid {
+    flex-direction: column;
+    gap: 0.7rem 0;
+  }
+  .music-card {
+    width: 92vw;
+    min-width: 0;
+    max-width: 100vw;
+  }
+  .music-cover {
+    height: 250px;
+  }
+}
