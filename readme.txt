@@ -1,12 +1,10 @@
-Sample Downloaded Music: https://www.bensound.com
----------------------------------------------------
 Admin Access
-email: admin@admin.com
+email: admin@musiccloud.com
 password: admin123
 ----------------------------------------------------
 Sample User Access
-email: jsmith@sample.com
-password: jsmith123
+email: khang@gmail.com
+password: khang123
 ----------------------------------------------------
 Project: Simple Music Cloud Community System using PHP/MySQLi
 
@@ -35,7 +33,7 @@ Download or set up any local web server that runs PHP script.
 Open the web-server database and create a new database name it music_db.
 Import the SQL file located in the database folder of the source code.
 Copy and paste the source code to the location where your local web server accessing your local projects. Example for XAMPP('C:\xampp\htdocs')
-Open a web browser and browse the project. E.g [http://localhost/music-cloud-community-system]
+Open a web browser and browse the project. E.g [http://localhost]
 
 I hope this Simple Music Cloud Community System will help you with what you are looking for, feel free to download and modify the source code.
 
